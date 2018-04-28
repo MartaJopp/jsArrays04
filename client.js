@@ -34,7 +34,11 @@ const fifteen = inventors.filter(function(inventor){
     }
 })
 
-console.log(fifteen)
+// can also do as es6:
+// const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year <= 1599))
+
+console.log(fifteen)// can also use console.table
+console.table(fifteen)
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors' first and last names
